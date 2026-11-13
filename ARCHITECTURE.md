@@ -56,3 +56,9 @@ To eliminate the risk of autonomous hallucinations or unintended mass modificati
 ---
 
 ## 5. Entity-Relationship (ER) Overview & Data Flow
+
+### Entity-Relationship Diagram
+![Entity Relationship Diagram](./docs/ER-diagram.png)
+
+### Level 1 Data Flow Diagram
+![Level 1 Data Flow Diagram](./docs/DFD-Level-1.png)
