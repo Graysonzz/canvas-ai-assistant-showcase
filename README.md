@@ -24,10 +24,11 @@
 
 The platform follows a **client-server architecture decoupled with a dedicated Model Context Protocol (MCP) tool server** to enforce strict trust boundaries between the LLM, application state, and external Canvas APIs.
 
-![System Architecture Diagram](./docs/architecture-diagram.png)
-*(Tip: Export Slide 4 from your Final Presentation as `docs/architecture-diagram.png`)*
+<img width="812" height="458" alt="Screenshot 2026-11-13 at 2 16 27 PM" src="https://github.com/user-attachments/assets/fd253062-ee5f-4b6d-8e0d-215a07d8d06c" />
+
 
 ### Tech Stack & Component Breakdown
+
 * **Frontend (`React`, `TypeScript`, `Vite`):** Presentation layer featuring the course dashboard, conversational AI workspace, interactive action-preview modals, and audit history views. Never stores Canvas credentials or calls Canvas directly.
 * **Backend Orchestrator (`Python`, `FastAPI`):** Core control plane handling user authentication, session management, RBAC, action validation, pre-execution database previews, and audit logging.
 * **Tool Layer (`Python`, `FastMCP`, `Docker`):** Isolated Canvas MCP Server that binds the LLM to strictly typed schemas and safely interfaces with the external Canvas LMS REST API.
@@ -45,6 +46,8 @@ Connecting non-deterministic LLM outputs to external LMS write operations requir
 
 Quality assurance was integrated in parallel with feature development across three isolated test zones, achieving **1,137 total automated test cases** and **99%+ code coverage** across the stack:
 
+<img width="812" height="452" alt="Screenshot 2026-11-13 at 2 21 19 PM" src="https://github.com/user-attachments/assets/149ddc8e-a926-4cff-bacb-928bdeec44c0" />
+
 | Layer / Service | Framework | Automated Tests | Code Coverage | Focus Areas |
 | :--- | :--- | :---: | :---: | :--- |
 | **Backend** | `pytest` | 672 | **99.00%** | REST APIs, auth/RBAC, action validation, preview staging, DB state |
@@ -57,6 +60,8 @@ Quality assurance was integrated in parallel with feature development across thr
 ## 📊 Usability Testing & Iteration
 
 We conducted two structured rounds of usability testing with **45 total participants** using the System Usability Scale (SUS) and task-completion benchmarks, iteratively refining onboarding and navigation between rounds:
+
+<img width="810" height="457" alt="Screenshot 2026-11-13 at 2 23 02 PM" src="https://github.com/user-attachments/assets/4a4da3fd-6935-4e96-8cba-3af2b7064caf" />
 
 | Metric | Round 1 (n = 28) | Round 2 (n = 45) | Improvement |
 | :--- | :---: | :---: | :---: |
