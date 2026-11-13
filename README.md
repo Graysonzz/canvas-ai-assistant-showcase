@@ -89,5 +89,5 @@ Built by a 6-person agile engineering team over 12 weeks (**1,215+ total logged 
 
 ## 🎥 Demo & Documentation
 
-* **Video Walkthrough:** `[https://youtu.be/75wI0h_uiRE?si=RbrlIw8cCDgQ5pWx]`
+* **Video Walkthrough:** [`Video Here`](https://youtu.be/75wI0h_uiRE?si=RbrlIw8cCDgQ5pWx)
 * **Deep-Dive Architecture:** See [`ARCHITECTURE.md`](./ARCHITECTURE.md) for Entity-Relationship (ER) diagrams and Level 1 Data Flow Diagrams (DFDs).
